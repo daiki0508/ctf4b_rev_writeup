@@ -81,7 +81,7 @@ mul = 1
 for idx in range(len(output)):
     for p in range(0x20, 0x7f):     # ASCIコードの印字可能範囲
         get_ord = p
-        tmp = get_ord ^ (idx + 1)
+        tmp = get_ord ^ (idx + 1)   # 排他的論理和
         tmp = tmp * mul
 
         s = 1
