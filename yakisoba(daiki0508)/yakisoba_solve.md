@@ -1,47 +1,17 @@
-<h1>yakisoba 156pt (144solves)</h1>
+# yakisoba 156pt (144solves)
 
-<h2>Would you like to have a yakisoba code?
+```
+Would you like to have a yakisoba code?
+(Hint: You'd better automate your analysis)
+```
+<br>
+<br>
 
-(Hint: You'd better automate your analysis)</h2>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<p>ファイルをダウンロードしてIDAで中身を見ると一見、短いコードに思える。</p><br><br>
-(https://user-images.githubusercontent.com/64737490/82852402-dd217400-9f3d-11ea-986e-b460f6e1fea3.png)
+ファイルをダウンロードしてIDAで中身を見ると一見、短いコードに思える。<br><br>
+
+![yakisoba-1](https://user-images.githubusercontent.com/64737490/82873050-e2e37d80-9f6e-11ea-8970-06777dca8bc1.png)
 <br><br>
+
 しかし、【call sub_820】という部分の詳細を見てみると、600行以上の膨大な比較のコードが記述されている。よって問題文のヒントにもあるように、
 オート化して解くべき問題だと推測できる。<br>
 有名なツールとして、angrという静的動作解析ツールがあるのでpythonでangrを読み込ませる<br><br>
@@ -71,5 +41,3 @@ def main():
 if __name__ == '__main__':
     main()
 ```
-
-<br><br>
