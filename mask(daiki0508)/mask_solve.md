@@ -1,52 +1,20 @@
-<h1>mask 62pt(354solve)</h1>
+# mask 62pt(354solve)
 
-<h2>The price of mask goes down. So does the point (it's easy)!
+## The price of mask goes down. So does the point (it's easy)!
 
-(SHA-1 hash: c9da034834b7b699a7897d408bcb951252ff8f56)</h2>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+## (SHA-1 hash: c9da034834b7b699a7897d408bcb951252ff8f56)
+  
+  
 長々と説明文が書いてあるが問題文は全く関係ない。<br>
-  ダウンロードしたファイルを解凍して開き、fileコマンドを開くとx86/x64のELF形式のファイルだと分かる。よって、IDAでファイルの中身を見てみる。<br><br>
-  (https://user-images.githubusercontent.com/64737490/82850194-4f8e5600-9f36-11ea-89fa-105bc6d69c70.jpg)
-  <br><br>
- すると中には二つの文字列がそれぞれレジスタにleaされていると分かる。また、
-  <br><br>
-  (https://user-images.githubusercontent.com/64737490/82850507-a6485f80-9f37-11ea-9ed3-f044645afda1.jpg)
+ダウンロードしたファイルを解凍して開き、fileコマンドを開くとx86/x64のELF形式のファイルだと分かる。よって、IDAでファイルの中身を見てみる。
+
+<br><br>
+![mask_ida-2](https://user-images.githubusercontent.com/64737490/82870883-a3fff880-9f6b-11ea-8edf-894bfc787027.jpg)
+<br><br>
+ 
+すると中には二つの文字列がそれぞれレジスタにleaされていると分かる。また、
+<br><br>
+![mask_ida-3](https://user-images.githubusercontent.com/64737490/82871049-e3c6e000-9f6b-11ea-9f71-450319ba0dce.jpg)
 <br><br>
   この画像から、指定したFLAG文字列を0x75でAND演算した文字列、0xEBでAND演算した文字列がそれぞれ１つ目の画像の結果になるかどうかで正しいFLAGか判断していると思う。(test eax eaxより）
   <br>
