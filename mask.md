@@ -43,3 +43,22 @@
 <h2>長々と説明文が書いてあるが問題文は全く関係ない。<br>
   ダウンロードしたファイルを解凍して開き、fileコマンドを開くとx86/x64のELF形式のファイルだと分かる。よって、IDAでファイルの中身を見てみる。<br>
   (https://user-images.githubusercontent.com/64737490/82850194-4f8e5600-9f36-11ea-89fa-105bc6d69c70.jpg)
+  <br>
+ すると中には二つの文字列がそれぞれレジスタにleaされていると分かるまた
+  <br>
+  (https://user-images.githubusercontent.com/64737490/82850507-a6485f80-9f37-11ea-9ed3-f044645afda1.jpg)
+<br>
+  この画像から、指定したFLAG文字列を0x75でAND演算した文字列、0xEBでAND演算した文字列がそれぞれ１つ目の画像の結果になるかどうかで正しいFLAGか判断していると思う。(test eax eaxより）
+  <br>
+  よって、以下のpythonコードで解析を行う。<br><br>
+```python
+  # -*- coding: utf-8 -*-
+s = 'atd4`qdedtUpetepqeUdaaeUeaqau'
+s1 = 'c`b bk`kj`KbababcaKbacaKiacki'
+ans = ''
+for i,j in zip(s, s1):
+    ans += chr(ord(i) | ord(j))
+
+print(ans)
+```
+<br><br>
