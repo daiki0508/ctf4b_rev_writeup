@@ -51,6 +51,7 @@
   この画像から、指定したFLAG文字列を0x75でAND演算した文字列、0xEBでAND演算した文字列がそれぞれ１つ目の画像の結果になるかどうかで正しいFLAGか判断していると思う。(test eax eaxより）
   <br>
   よって、以下のpythonコードで解析を行う。<br><br>
+  
 ```python
   # -*- coding: utf-8 -*-
 s = 'atd4`qdedtUpetepqeUdaaeUeaqau'
@@ -61,4 +62,5 @@ for i,j in zip(s, s1):
 
 print(ans)
 ```
+
 <br><br>
