@@ -44,7 +44,7 @@
   ダウンロードしたファイルを解凍して開き、fileコマンドを開くとx86/x64のELF形式のファイルだと分かる。よって、IDAでファイルの中身を見てみる。<br><br>
   (https://user-images.githubusercontent.com/64737490/82850194-4f8e5600-9f36-11ea-89fa-105bc6d69c70.jpg)
   <br><br>
- すると中には二つの文字列がそれぞれレジスタにleaされていると分かるまた
+ すると中には二つの文字列がそれぞれレジスタにleaされていると分かる。また、
   <br><br>
   (https://user-images.githubusercontent.com/64737490/82850507-a6485f80-9f37-11ea-9ed3-f044645afda1.jpg)
 <br><br>
