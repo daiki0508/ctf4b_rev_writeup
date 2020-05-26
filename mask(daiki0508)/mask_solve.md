@@ -1,8 +1,8 @@
 # mask 62pt(354solve)
-
-## The price of mask goes down. So does the point (it's easy)!
-
-## (SHA-1 hash: c9da034834b7b699a7897d408bcb951252ff8f56)
+```
+ The price of mask goes down. So does the point (it's easy)!
+ (SHA-1 hash: c9da034834b7b699a7897d408bcb951252ff8f56)
+```
 <br>
 <br>
 長々と説明文が書いてあるが問題文は全く関係ない。<br>
