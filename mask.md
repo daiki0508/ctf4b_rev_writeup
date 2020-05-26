@@ -42,8 +42,7 @@
 <br>
 長々と説明文が書いてあるが問題文は全く関係ない。<br>
   ダウンロードしたファイルを解凍して開き、fileコマンドを開くとx86/x64のELF形式のファイルだと分かる。よって、IDAでファイルの中身を見てみる。<br><br>
-  ![ida-1]
-  (https://user-images.githubusercontent.com/64737490/82850194-4f8e5600-9f36-11ea-89fa-105bc6d69c70.jpg)
+  ![ida-1](https://user-images.githubusercontent.com/64737490/82850194-4f8e5600-9f36-11ea-89fa-105bc6d69c70.jpg)
   <br><br>
  すると中には二つの文字列がそれぞれレジスタにleaされていると分かる。また、
   <br><br>
