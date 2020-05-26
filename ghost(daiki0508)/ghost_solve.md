@@ -1,43 +1,14 @@
-<h1>ghost 279pt(68solves)</h1>
+# ghost 279pt(68solves)
 
-<h2>A program written by a ghost</h2>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br> 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+```
+A program written by a ghost
+```
 <br>
 <br>
 開かれたファイルをエディタで見ると何かしらの構文のような形が見られるが、今まで見たこともない構文のように思われる。<br>
+
+![ghost-1](https://user-images.githubusercontent.com/64737490/82872497-17a30500-9f6e-11ea-9b90-87fb905c058d.png)
+
 ここで、問題文からGhostScriptと検索すると<br><br>
 
 ```
